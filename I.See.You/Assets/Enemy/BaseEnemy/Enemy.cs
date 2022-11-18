@@ -51,7 +51,7 @@ public class Enemy : MonoBehaviour
         Player = Chara.transform;
         Guard = GetComponent<NavMeshAgent>();
         Anim = Form2.GetComponent<Animator>(); //Sets Animation to be played.
-        
+
         Form1.SetActive(true);
         Form2.SetActive(false);
 
@@ -137,7 +137,7 @@ public class Enemy : MonoBehaviour
             }
             else
             {
-                
+
                 if (EyeTrig == false)
                 {
                     if (PlayerSeen == true)
@@ -169,8 +169,8 @@ public class Enemy : MonoBehaviour
                 //SightLight.color = Color.white;
                     Guard.stoppingDistance = 0f;
                     Guard.SetDestination(PatrolTarget);
-                
-                
+
+
 
 
 
@@ -250,7 +250,7 @@ public class Enemy : MonoBehaviour
 
             print("calm");
 
-            yield return new WaitForSeconds(1f); //Time for Revert Animation.
+            yield return new WaitForSeconds(0.8f); //Time for Revert Animation.
             Guard.isStopped = false;
             if (PlayerSeen == false)
             {
@@ -298,12 +298,12 @@ public class Enemy : MonoBehaviour
 
         AttackSphere.GetComponent<EnemyAttackBall>().Attack = true;
         GameObject Explosion = (GameObject)Instantiate(ColExp, AttackSphere.transform.position, AttackSphere.transform.rotation);
-        yield return new WaitForSeconds(0.5f); //Time The Attack has to damage player.
+        yield return new WaitForSeconds(0.75f); //Time The Attack has to damage player.
         GameObject.Destroy(Explosion);
         AttackSphere.GetComponent<EnemyAttackBall>().Attack = false;
 
 
-        
+
         Anim.SetTrigger("Chasing");
 
         Guard.isStopped = false;
