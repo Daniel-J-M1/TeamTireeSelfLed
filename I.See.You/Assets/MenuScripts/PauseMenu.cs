@@ -6,11 +6,15 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     private GameObject[] PausedObjects;
+
+    private int NextSceneIndex;
+
     // Start is called before the first frame update
     void Start()
     {
         PausedObjects = GameObject.FindGameObjectsWithTag("Paused");
         Time.timeScale = 1;
+        NextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         Resume();
     }
 
@@ -60,6 +64,11 @@ public class PauseMenu : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(NextSceneIndex);
     }
 
 }

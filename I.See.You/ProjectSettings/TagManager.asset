@@ -20,6 +20,7 @@ TagManager:
   - DeathScreen
   - Dialogue
   - DialogueText
+  - FinalScreen
   layers:
   - Default
   - TransparentFX

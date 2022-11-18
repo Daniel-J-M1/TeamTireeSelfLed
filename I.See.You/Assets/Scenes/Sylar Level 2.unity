@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.124368794, g: 0.07628726, b: 0.2821626, a: 1}
+  m_IndirectSpecularColor: {r: 0.12436844, g: 0.07628701, b: 0.28216228, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3512,6 +3512,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 152860961}
     m_Modifications:
+    - target: {fileID: 7197882882441975064, guid: e094ac16c727c22409778b9b85c6a97b, type: 3}
+      propertyPath: FinalLevel
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7197882882441975065, guid: e094ac16c727c22409778b9b85c6a97b, type: 3}
       propertyPath: m_Name
       value: EndPoint
@@ -4712,7 +4716,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8206353898292734668, guid: b39e4538c8f58b347b62520be59347a5, type: 3}
       propertyPath: PatrolPoints.Array.size
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8206353898292734668, guid: b39e4538c8f58b347b62520be59347a5, type: 3}
       propertyPath: PatrolPoints.Array.data[0]
@@ -11962,21 +11966,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1736484419320028066, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1736484419320028069, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
       propertyPath: m_Name
       value: Health
       objectReference: {fileID: 0}
     - target: {fileID: 1736484419320028069, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1736484421238471739, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1736484421238471739, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9a162312df7bce45a82d2c985951b37, type: 3}

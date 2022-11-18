@@ -17,17 +17,17 @@ public class MainMenu : MonoBehaviour
         
     }
 
-    public void RueLevel()
+    public void TutorialLevel()
     {
         SceneManager.LoadScene(1);
     }
 
-    public void SylarLevel()
+    public void Level1()
     {
         SceneManager.LoadScene(2);
     }
 
-    public void ProgrammerTesting()
+    public void Level2()
     {
         SceneManager.LoadScene(3);
     }

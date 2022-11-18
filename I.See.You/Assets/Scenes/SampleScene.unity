@@ -2562,10 +2562,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Health
       objectReference: {fileID: 0}
-    - target: {fileID: 1736484419320028069, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1736484421238471739, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2573,10 +2569,6 @@ PrefabInstance:
     - target: {fileID: 1736484421238471739, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7630228000297861842, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
-      propertyPath: m_TagString
-      value: EndScreen
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9a162312df7bce45a82d2c985951b37, type: 3}

@@ -23,7 +23,6 @@ public class WallConnect : MonoBehaviour
 
         foreach (var I in Walls)
         {
-            print(Index);
             BaseMat.Add(I.GetComponent<MeshRenderer>().material);
             Index++;
             
@@ -54,7 +53,6 @@ public class WallConnect : MonoBehaviour
                 if(I != Camera.GetComponent<CameraTransparency>().Wall)
                 {
                     I.GetComponent<MeshRenderer>().material = BaseMat[Index];
-                    print(BaseMat[Index]);
                     Index++;
                 }
             }

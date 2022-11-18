@@ -33,7 +33,6 @@ public class EyeMovement : MonoBehaviour
         PlayerMove = Player.GetComponent<Movement>();
 
         ReturnRot = transform.rotation;
-        Debug.Log(ReturnRot);
     }
 
     // Update is called once per frame
