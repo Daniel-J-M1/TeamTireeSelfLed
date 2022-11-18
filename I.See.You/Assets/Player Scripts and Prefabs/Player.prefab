@@ -264,6 +264,8 @@ MonoBehaviour:
   EnemyChange:
   - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 2100000, guid: 957273e55445f2e48914809e8ebfdb5d, type: 2}
+  X: {fileID: 0}
+  Text: {fileID: 0}
 --- !u!114 &-5559232679768043642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,7 +283,7 @@ MonoBehaviour:
   InvTimer: 3
   SpeedBoost: 2
   PlayerMove: {fileID: 0}
-  DeathStateAllowed: 0
+  DeathStateAllowed: 1
   Bar: {fileID: 0}
 --- !u!114 &603194388
 MonoBehaviour:
@@ -360,7 +362,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

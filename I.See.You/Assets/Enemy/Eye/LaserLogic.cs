@@ -8,6 +8,13 @@ public class LaserLogic : MonoBehaviour
     public GameObject ColExp;
     public float Speed;
 
+    private AudioSource Explo;
+
+    private void Start()
+    {
+        Explo = GetComponent<AudioSource>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -41,6 +48,7 @@ public class LaserLogic : MonoBehaviour
     {
         if (ColExp != null)
         {
+            //Explo.Play();
             GameObject Explosion = (GameObject)Instantiate(ColExp, transform.position, transform.rotation);
             Destroy(gameObject);
             Destroy(Explosion, 1f);

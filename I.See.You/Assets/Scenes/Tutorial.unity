@@ -3027,7 +3027,7 @@ PrefabInstance:
       value: 'Congratulations on finding the last key!
 
         The green glowing
-        door at the bottom is the exit and you can get out of here by passing through
+        door  is the exit and you can get out of here by pressing Q to passing through
         it.'
       objectReference: {fileID: 0}
     - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
@@ -6415,7 +6415,7 @@ PrefabInstance:
       objectReference: {fileID: 869387250}
     - target: {fileID: -5559232679768043642, guid: edc04a586f1c4f945b32e40318ecab28, type: 3}
       propertyPath: DeathStateAllowed
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7376662902581182002, guid: edc04a586f1c4f945b32e40318ecab28, type: 3}
       propertyPath: Running

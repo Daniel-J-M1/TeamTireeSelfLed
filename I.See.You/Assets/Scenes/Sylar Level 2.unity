@@ -6063,7 +6063,7 @@ PrefabInstance:
       objectReference: {fileID: 1853313144}
     - target: {fileID: -5559232679768043642, guid: edc04a586f1c4f945b32e40318ecab28, type: 3}
       propertyPath: DeathStateAllowed
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7376662902581182002, guid: edc04a586f1c4f945b32e40318ecab28, type: 3}
       propertyPath: Running

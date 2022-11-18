@@ -7186,7 +7186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1736484419320028065, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1736484419320028065, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
       propertyPath: m_AnchorMax.x
@@ -10243,10 +10243,6 @@ PrefabInstance:
       propertyPath: Bar
       value: 
       objectReference: {fileID: 803462933}
-    - target: {fileID: -5559232679768043642, guid: edc04a586f1c4f945b32e40318ecab28, type: 3}
-      propertyPath: DeathStateAllowed
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7376662902581182002, guid: edc04a586f1c4f945b32e40318ecab28, type: 3}
       propertyPath: Running
       value: 7
@@ -10302,10 +10298,6 @@ PrefabInstance:
     - target: {fileID: 7376662902581182013, guid: edc04a586f1c4f945b32e40318ecab28, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376662903020087081, guid: edc04a586f1c4f945b32e40318ecab28, type: 3}
-      propertyPath: orthographic size
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7376662903020087086, guid: edc04a586f1c4f945b32e40318ecab28, type: 3}
       propertyPath: m_LocalPosition.x
