@@ -19,7 +19,7 @@ GameObject:
   m_TagString: SecurityKey
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2434063542510946561
 Transform:
@@ -109,7 +109,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4301232337709077081
 MonoBehaviour:
@@ -124,3 +124,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Range: 0
+  RotateSpeed: 5
+  FloatHeight: 0.3
+  FloatSpeed: 3
