@@ -2404,11 +2404,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2434063542510946565, guid: 311602f0334ca294da8d987535d5d903, type: 3}
   m_PrefabInstance: {fileID: 2434063542279462294}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2136022615 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2186753249142525856, guid: c35d0720df8143c45a1ad05e94f0c641, type: 3}
-  m_PrefabInstance: {fileID: 2186753251209335287}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &661677197172762135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2792,14 +2787,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Key
       objectReference: {fileID: 0}
-    - target: {fileID: 4301232337709077081, guid: 311602f0334ca294da8d987535d5d903, type: 3}
-      propertyPath: FloatHeight
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4301232337709077081, guid: 311602f0334ca294da8d987535d5d903, type: 3}
-      propertyPath: SecurityDoor
-      value: 
-      objectReference: {fileID: 2136022615}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 311602f0334ca294da8d987535d5d903, type: 3}
 --- !u!1001 &3905457947775375782
