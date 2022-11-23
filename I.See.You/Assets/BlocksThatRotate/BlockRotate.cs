@@ -6,7 +6,13 @@ public class BlockRotate : MonoBehaviour
 {
     public GameObject Block;            //References the block in question
     private GameObject Player;
+    public GameObject RightArrow;
+    public GameObject LeftArrow;
     public GameObject[] RotBlocksAttached;
+
+    public Material CanTurn;
+    public Material CannotTurn;
+
 
     private AudioSource Rot;
 
@@ -77,10 +83,27 @@ public class BlockRotate : MonoBehaviour
 
             Rot.Play();
 
-            print(TurningRot);
             BlockRot = Quaternion.Euler(BlockRot.eulerAngles.x, TurningRot, BlockRot.eulerAngles.z);
 
             //BlockRot = Quaternion.Euler(BlockRot.eulerAngles.x, (BlockRot.eulerAngles.y + 90), BlockRot.eulerAngles.z);
+        }
+
+        if (LimitRight > 0 && LimitRight < (MaxRight + 1))
+        {
+            RightArrow.GetComponent<MeshRenderer>().material = CanTurn;
+        }
+        else
+        {
+            RightArrow.GetComponent<MeshRenderer>().material = CannotTurn;
+        }
+
+        if (LimitLeft > 0 && LimitLeft < (MaxLeft + 1))
+        {
+            LeftArrow.GetComponent<MeshRenderer>().material = CanTurn;
+        }
+        else
+        {
+            LeftArrow.GetComponent<MeshRenderer>().material = CannotTurn;
         }
     }
 

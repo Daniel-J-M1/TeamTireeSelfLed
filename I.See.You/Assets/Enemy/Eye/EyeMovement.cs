@@ -85,8 +85,6 @@ public class EyeMovement : MonoBehaviour
             {
                 if (WayRot.StopAntiClockwise == true)
                 {
-                    
-                    Debug.Log(ReturnRot.x);
                     if (TurnNext == false)
                     {
                         ReturnRot = Quaternion.Euler(ReturnRot.eulerAngles.x, ReturnRot.eulerAngles.y + 90, ReturnRot.eulerAngles.z);
