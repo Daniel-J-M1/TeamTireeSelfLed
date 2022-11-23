@@ -21,6 +21,7 @@ TagManager:
   - Dialogue
   - DialogueText
   - FinalScreen
+  - UIKeyCounter
   layers:
   - Default
   - TransparentFX

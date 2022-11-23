@@ -8,7 +8,7 @@ public class UISkillScript : MonoBehaviour
     private GameObject Player;
     //private UnityEngine.UI.Text RotCounter;
 
-
+    public Slider Bar;
 
     // Start is called before the first frame update
     void Start()
@@ -20,8 +20,9 @@ public class UISkillScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Bar.value = Player.GetComponent<RotationSkillCounter>().RotCounter;
         //print(Player.GetComponent<RotationSkillCounter>().RotCounter);
-        GetComponent<Text>().text = Player.GetComponent<RotationSkillCounter>().RotCounter.ToString();
+        //GetComponent<Text>().text = Player.GetComponent<RotationSkillCounter>().RotCounter.ToString();
         //print(Player.GetComponent<RotationSkillCounter>().RotCounter);
     }
 }

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4301232337709077081}
   m_Layer: 0
   m_Name: Key
-  m_TagString: SecurityDoor
+  m_TagString: SecurityKey
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -124,4 +124,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Range: 0
-  SecurityDoor: {fileID: 0}

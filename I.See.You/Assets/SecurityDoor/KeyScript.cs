@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class KeyScript : MonoBehaviour
 {
-
+    private GameObject UIElement;
     public bool Range = false;
     //public GameObject SecurityDoor;
     //private SecurityDoorScript Scripts;
 
+    private void Start()
+    {
+        UIElement = GameObject.FindGameObjectWithTag("UIKeyCounter");
+    }
 
     private void Update()
     {
@@ -18,7 +22,7 @@ public class KeyScript : MonoBehaviour
             //Scripts = SecurityDoor.GetComponent<SecurityDoorScript>();
 
             //Scripts.KeyFound();
-
+            UIElement.GetComponent<KeyCounter>().CounterDown();
 
             Destroy(gameObject);
         }

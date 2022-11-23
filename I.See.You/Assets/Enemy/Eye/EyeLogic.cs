@@ -17,6 +17,7 @@ public class EyeLogic : MonoBehaviour
     public bool Triggered = false;  //Reference to if an object enters the sight of the enemy.
     public bool PlayerSeen = false;
     public bool Firing = false;
+    private bool LaserActive = false;
 
     public string Tag;
 
@@ -30,6 +31,9 @@ public class EyeLogic : MonoBehaviour
 
     RaycastHit HitData;             //Reference Data from where the Raycast hits.
 
+    public LineRenderer Laser;
+    public ParticleSystem Impact;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +42,8 @@ public class EyeLogic : MonoBehaviour
         Guard = GameObject.FindGameObjectsWithTag("Enemy");
         WallGuard = GameObject.FindGameObjectsWithTag("WallEnemy");
         Detected = GetComponent<AudioSource>();
-
+        Laser.enabled = false;
+        Impact.Stop();
     }
 
 
@@ -56,10 +61,25 @@ public class EyeLogic : MonoBehaviour
 
             //Checks the distance between the enemy and the player
             float HitDis = HitData.distance;
+            
+
+            //GameObject HeatingUp = GameObject.Instantiate(Projectile, transform.position, transform.rotation) as GameObject;
+            //HeatingUp.GetComponent<LaserLogic>().SetTarget(HitData.point);
+
+
 
             //If the tag is "Player", begins to chase.
             if (Tag == "Player")
             {
+                if (LaserActive == false)
+                {
+                    Laser.enabled = true;
+                    Laser.SetPosition(0, transform.position);
+                    Laser.SetPosition(1, HitData.point);
+                    Impact.Play();
+                    Impact.transform.position = HitData.point;
+
+                }
                 if (PlayerSeen == false)
                 {
                     //float Tri = Time.deltaTime * 3f;
@@ -73,6 +93,8 @@ public class EyeLogic : MonoBehaviour
                 PlayerSeen = true; //For Another Script's Logic. True if the player is in sight of the eye.
                 if (Firing == false)
                 {
+
+
                     Firing = true;
                     StartCoroutine(Fired());
                 }
@@ -96,7 +118,8 @@ public class EyeLogic : MonoBehaviour
             else //Ensures guards don't follow the player's location when not in sight.
             {
                 PlayerSeen = false; //For Another Script's Logic
-                Detected.Stop();
+                //Laser.enabled = false;
+                //Detected.Stop();
 
                 //EyeLight.color = Color.Lerp(Color.red, Color.white, 5f);
                 foreach (var I in Guard)
@@ -119,6 +142,7 @@ public class EyeLogic : MonoBehaviour
         else //Ensures guards don't follow the player's location when not in sight.
         {
             PlayerSeen = false;
+            //Laser.enabled = false;
             Tag = null;
             //EyeLight.color = Color.Lerp(Color.red, Color.white, 5f);
             foreach (var I in WallGuard)
@@ -158,7 +182,7 @@ public class EyeLogic : MonoBehaviour
         {
             Triggered = false;
             PlayerSeen = false;
-            Detected.Stop();
+            //Detected.Stop();
 
         }
 
@@ -169,11 +193,18 @@ public class EyeLogic : MonoBehaviour
 
         yield return new WaitForSeconds(FiringTime);
 
-        GameObject Laser = GameObject.Instantiate(Projectile, transform.position, transform.rotation) as GameObject;
-        Laser.GetComponent<LaserLogic>().SetTarget(HitData.point);
+        Laser.enabled = false;
+        LaserActive = true;
 
+        Impact.Stop();
+        Detected.Stop();
+
+        GameObject Project = GameObject.Instantiate(Projectile, transform.position, transform.rotation) as GameObject;
+        Project.GetComponent<LaserLogic>().SetTarget(HitData.point);
+
+        yield return new WaitForSeconds(0.5f);
         //GameObject.Destroy(Laser, 2F); 
-
+        LaserActive = false;
 
         if (Tag == "Player")
         {
