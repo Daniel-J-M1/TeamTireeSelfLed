@@ -29,7 +29,7 @@ public class MenuEye : MonoBehaviour
         
         if (Change == true)
         {
-            print(Index);
+            //print(Index);
             Index = Random.Range(0, (MenuPoints.Length - 1));
             if (Index != Control)
             {
@@ -52,7 +52,7 @@ public class MenuEye : MonoBehaviour
 
     IEnumerator TimeForChange()
     {
-        yield return new WaitForSeconds(Random.Range(3, 8));
+        yield return new WaitForSeconds(Random.Range(0.5f, 3));
         Change = true;
     }
 
