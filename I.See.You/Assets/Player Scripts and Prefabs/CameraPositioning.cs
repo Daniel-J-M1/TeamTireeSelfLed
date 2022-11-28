@@ -7,12 +7,14 @@ public class CameraPositioning : MonoBehaviour
     private bool Triggered = false;     //Allows for control on when the camera moves, as tro not allow for issues.
     public float ChangeTime = 0.25f;       //Sets Time between activation of camera change
     private float Position = 1f;
+    private GameObject Player;
 
     Animator Anim;                      //Sets Animation Variable
 
     void Start()
     {
         Anim = gameObject.GetComponent<Animator>(); //Sets Animation to be played.
+        Player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -36,6 +38,12 @@ public class CameraPositioning : MonoBehaviour
             StartCoroutine(Position3());
             print("hit");
         }
+
+        //transform.position = Player.transform.position;
+        //print("Change");
+
+
+
     }
 
     IEnumerator Position1()
