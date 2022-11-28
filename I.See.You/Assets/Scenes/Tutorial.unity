@@ -2605,6 +2605,10 @@ PrefabInstance:
       value: Player - New
       objectReference: {fileID: 0}
     - target: {fileID: 476690627938690537, guid: f86d572e2e506b64da2183534985d1da, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 476690627938690537, guid: f86d572e2e506b64da2183534985d1da, type: 3}
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}

@@ -7,7 +7,7 @@ public class EyeMovement : MonoBehaviour
 
     public GameObject[] Points;    //The array of the waypoints.
 
-    private GameObject Player;
+    public GameObject Player;
     public GameObject EyeSight;
 
     private Vector3 ChosenPoint;    //The position of the chosen point.
@@ -27,7 +27,7 @@ public class EyeMovement : MonoBehaviour
     private void Awake()
     {
         //Points = GameObject.FindGameObjectsWithTag("Waypoint"); //Adds the waypoijts to the array.
-        Player = GameObject.FindGameObjectWithTag("Player");
+        Player = GameObject.FindGameObjectWithTag("PlayerController");
 
         Trig = EyeSight.GetComponent<EyeLogic>();
         PlayerMove = Player.GetComponent<Movement>();
@@ -121,6 +121,7 @@ public class EyeMovement : MonoBehaviour
         {
             if (Trig.Tag == "Player")
             {
+                print("Test");
                 Vector3 PlayerDir = Vector3.RotateTowards(transform.forward, AimPlayer, RotSpeed, 0.0f);
 
                 transform.rotation = Quaternion.LookRotation(PlayerDir);

@@ -23,6 +23,7 @@ TagManager:
   - FinalScreen
   - UIKeyCounter
   - MenuLookPoints
+  - PlayerController
   layers:
   - Default
   - TransparentFX
