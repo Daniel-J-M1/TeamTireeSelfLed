@@ -3738,7 +3738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 476690627938690530, guid: f86d572e2e506b64da2183534985d1da, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.96
+      value: 1.353
       objectReference: {fileID: 0}
     - target: {fileID: 476690627938690530, guid: f86d572e2e506b64da2183534985d1da, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3800,13 +3800,16 @@ PrefabInstance:
       propertyPath: MaxHealth
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6972311414166608981, guid: f86d572e2e506b64da2183534985d1da, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6972311414166608982, guid: f86d572e2e506b64da2183534985d1da, type: 3}
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 476690627938690535, guid: f86d572e2e506b64da2183534985d1da, type: 3}
-    - {fileID: 476690627938690531, guid: f86d572e2e506b64da2183534985d1da, type: 3}
+    - {fileID: 6972311414166608981, guid: f86d572e2e506b64da2183534985d1da, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f86d572e2e506b64da2183534985d1da, type: 3}
 --- !u!1001 &538016159
 PrefabInstance:
@@ -4864,22 +4867,6 @@ PrefabInstance:
     - target: {fileID: 8206353898292734668, guid: b39e4538c8f58b347b62520be59347a5, type: 3}
       propertyPath: PatrolPoints.Array.data[5]
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8206353898292734669, guid: b39e4538c8f58b347b62520be59347a5, type: 3}
-      propertyPath: m_Speed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8206353898292734669, guid: b39e4538c8f58b347b62520be59347a5, type: 3}
-      propertyPath: m_Radius
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8206353898292734669, guid: b39e4538c8f58b347b62520be59347a5, type: 3}
-      propertyPath: m_Acceleration
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8206353898292734669, guid: b39e4538c8f58b347b62520be59347a5, type: 3}
-      propertyPath: m_AngularSpeed
-      value: 120
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b39e4538c8f58b347b62520be59347a5, type: 3}
@@ -12873,7 +12860,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012199536}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.6471705, y: 3.013327, z: 25.278214}
+  m_LocalPosition: {x: 3.6471705, y: 4.6, z: 25.278214}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1983941804}
