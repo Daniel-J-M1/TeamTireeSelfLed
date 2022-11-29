@@ -120,7 +120,7 @@ public class Enemy : MonoBehaviour
 
                 if (Freeze == false)
                 {
-                    Guard.stoppingDistance = 3f;
+                    Guard.stoppingDistance = AttackRange;
                     Guard.SetDestination(Player.position);
                 }
 
@@ -128,7 +128,7 @@ public class Enemy : MonoBehaviour
                 {
                     if (CanAttack == true)
                     {
-                        //Anim.SetTrigger("Attack");
+                        Anim.SetTrigger("Attack");
                         StartCoroutine(HitPlayer());
                         //print("Ghost");
                     }
@@ -188,7 +188,7 @@ public class Enemy : MonoBehaviour
                 StartCoroutine(PlayerSpotted());
             }
             PlayerSeen = true;
-            Guard.stoppingDistance = 3f;
+            Guard.stoppingDistance = AttackRange;
             Guard.SetDestination(Player.position);
         }
         else
@@ -216,7 +216,7 @@ public class Enemy : MonoBehaviour
                 StartCoroutine(PlayerSpotted());
             }
             PlayerSeen = true;
-            Guard.stoppingDistance = 3f;
+            Guard.stoppingDistance = AttackRange;
             Guard.SetDestination(Player.position);
         }
 
@@ -289,12 +289,13 @@ public class Enemy : MonoBehaviour
 
     IEnumerator HitPlayer()
     {
+        
         BallBase = transform.position;
         CanAttack = false;
-        Anim.SetTrigger("Attack");
+        
         Guard.isStopped = true;
 
-        yield return new WaitForSeconds(1.5f); //TIme for Attack Animation
+        yield return new WaitForSeconds(0.4f); //TIme for Attack Animation
 
         AttackSphere.GetComponent<EnemyAttackBall>().Attack = true;
         GameObject Explosion = (GameObject)Instantiate(ColExp, AttackSphere.transform.position, AttackSphere.transform.rotation);
