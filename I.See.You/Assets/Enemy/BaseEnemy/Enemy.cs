@@ -120,7 +120,7 @@ public class Enemy : MonoBehaviour
 
                 if (Freeze == false)
                 {
-                    Guard.stoppingDistance = 1.5f;
+                    Guard.stoppingDistance = 3f;
                     Guard.SetDestination(Player.position);
                 }
 
@@ -146,8 +146,8 @@ public class Enemy : MonoBehaviour
                         StartCoroutine(PlayerGone());
                     }
                     //SightLight.color = Color.white;
-                        Guard.stoppingDistance = 0f;
-                        Guard.SetDestination(PatrolTarget);
+                    Guard.stoppingDistance = 0f;
+                    Guard.SetDestination(PatrolTarget);
                 }
                 PlayerSeen = false;
             }
@@ -167,8 +167,8 @@ public class Enemy : MonoBehaviour
                 }
                 PlayerSeen = false;
                 //SightLight.color = Color.white;
-                    Guard.stoppingDistance = 0f;
-                    Guard.SetDestination(PatrolTarget);
+                Guard.stoppingDistance = 0f;
+                Guard.SetDestination(PatrolTarget);
 
 
 
@@ -188,8 +188,8 @@ public class Enemy : MonoBehaviour
                 StartCoroutine(PlayerSpotted());
             }
             PlayerSeen = true;
-                Guard.stoppingDistance = 1.5f;
-                Guard.SetDestination(Player.position);
+            Guard.stoppingDistance = 3f;
+            Guard.SetDestination(Player.position);
         }
         else
         {
@@ -204,7 +204,7 @@ public class Enemy : MonoBehaviour
 
                 //SightLight.color = Color.white;
                 Guard.stoppingDistance = 0f;
-                    Guard.SetDestination(PatrolTarget);
+                Guard.SetDestination(PatrolTarget);
             }
         }
 
@@ -216,8 +216,8 @@ public class Enemy : MonoBehaviour
                 StartCoroutine(PlayerSpotted());
             }
             PlayerSeen = true;
-                Guard.stoppingDistance = 1.5f;
-                Guard.SetDestination(Player.position);
+            Guard.stoppingDistance = 3f;
+            Guard.SetDestination(Player.position);
         }
 
 
