@@ -338,7 +338,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Block: {fileID: 6308498225708869379}
+  RightArrow: {fileID: 0}
+  LeftArrow: {fileID: 0}
   RotBlocksAttached: []
+  CanTurn: {fileID: 0}
+  CannotTurn: {fileID: 0}
   RotateTime: 1
   LimitRight: 1
   LimitLeft: 1
