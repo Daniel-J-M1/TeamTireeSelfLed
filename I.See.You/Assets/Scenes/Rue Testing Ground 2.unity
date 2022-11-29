@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12436844, g: 0.07628701, b: 0.28216228, a: 1}
+  m_IndirectSpecularColor: {r: 0.124368794, g: 0.07628726, b: 0.2821626, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13018,6 +13018,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8206353898292734657, guid: b39e4538c8f58b347b62520be59347a5, type: 3}
   m_PrefabInstance: {fileID: 1402402760}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1357240701 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6972311414166608979, guid: f86d572e2e506b64da2183534985d1da, type: 3}
+  m_PrefabInstance: {fileID: 6972311414389875859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1357240709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357240701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2b02d9ecfa5fa47901d1e49368f1cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 2
+  Health: 0
+  InvTimer: 5
+  SpeedBoost: 2
+  PlayerMove: {fileID: 0}
+  DeathStateAllowed: 1
+  Bar: {fileID: 803462933}
 --- !u!4 &1369915620 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5605946968575353069, guid: 2bab071147615d5439a821b513321f93, type: 3}
@@ -20533,7 +20557,8 @@ PrefabInstance:
       propertyPath: Bar
       value: 
       objectReference: {fileID: 803462933}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5916325966766068818, guid: f86d572e2e506b64da2183534985d1da, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f86d572e2e506b64da2183534985d1da, type: 3}
 --- !u!4 &7664402447855413761 stripped
 Transform:
