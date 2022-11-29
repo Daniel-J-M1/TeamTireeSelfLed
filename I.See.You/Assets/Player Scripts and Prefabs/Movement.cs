@@ -26,10 +26,12 @@ public class Movement : MonoBehaviour
         Control = gameObject.AddComponent<CharacterController>();
         Guard = GameObject.FindGameObjectsWithTag("Enemy");
         Ground = transform.position.y;
-
-        X = GameObject.FindGameObjectWithTag("Dialogue");
-        Text = GameObject.FindGameObjectWithTag("DialogueText");
-        X.SetActive(false);
+        if (Camera == false)
+        {
+            X = GameObject.FindGameObjectWithTag("Dialogue");
+            Text = GameObject.FindGameObjectWithTag("DialogueText");
+            X.SetActive(false);
+        }
     }
 
     // Update is called once per frame

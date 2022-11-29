@@ -2689,6 +2689,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PlayerController
       objectReference: {fileID: 0}
+    - target: {fileID: 2020081221837424861, guid: f86d572e2e506b64da2183534985d1da, type: 3}
+      propertyPath: Bar
+      value: 
+      objectReference: {fileID: 869387250}
     - target: {fileID: 5916325966766068818, guid: f86d572e2e506b64da2183534985d1da, type: 3}
       propertyPath: Bar
       value: 
