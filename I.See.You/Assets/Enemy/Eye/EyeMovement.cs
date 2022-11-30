@@ -121,7 +121,7 @@ public class EyeMovement : MonoBehaviour
         {
             if (Trig.Tag == "Player")
             {
-                print("Test");
+                //print("Test");
                 Vector3 PlayerDir = Vector3.RotateTowards(transform.forward, AimPlayer, RotSpeed, 0.0f);
 
                 transform.rotation = Quaternion.LookRotation(PlayerDir);

@@ -128,6 +128,7 @@ MonoBehaviour:
   Firing: 0
   Tag: 
   FiringTime: 2
+  ColorChange: 0
   Damage: 1
   EyeLight: {fileID: 2160890911799613927}
   Laser: {fileID: 3942145564635331621}
@@ -181,6 +182,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  Player: {fileID: 0}
   EyeSight: {fileID: 1241989660643258558}
   MovementSpeed: 2
   Trig: {fileID: 0}
@@ -485,7 +487,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8367120900109686932}
   - component: {fileID: 3942145564635331621}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}

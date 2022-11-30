@@ -58,9 +58,9 @@ public class BlockRotate : MonoBehaviour
             LimitLeft = LimitLeft - 1;
             LimitRight = LimitRight + 1;
 
-            StopCoroutine(Player.GetComponent<RotationSkillCounter>().RotSkill());
+            //StopCoroutine(Player.GetComponent<RotationSkillCounter>().RotSkill());
             Player.GetComponent<RotationSkillCounter>().RotCounter = Player.GetComponent<RotationSkillCounter>().RotCounter - 1;
-            StartCoroutine(Player.GetComponent<RotationSkillCounter>().RotSkill());
+            //StartCoroutine(Player.GetComponent<RotationSkillCounter>().RotSkill());
 
             Rot.Play();
 
@@ -77,9 +77,9 @@ public class BlockRotate : MonoBehaviour
             LimitLeft = LimitLeft + 1;
             LimitRight = LimitRight - 1;
 
-            StopCoroutine(Player.GetComponent<RotationSkillCounter>().RotSkill());
+            //StopCoroutine(Player.GetComponent<RotationSkillCounter>().RotSkill());
             Player.GetComponent<RotationSkillCounter>().RotCounter = Player.GetComponent<RotationSkillCounter>().RotCounter - 1;
-            StartCoroutine(Player.GetComponent<RotationSkillCounter>().RotSkill());
+            //StartCoroutine(Player.GetComponent<RotationSkillCounter>().RotSkill());
 
             Rot.Play();
 

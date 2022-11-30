@@ -22,6 +22,7 @@ public class EyeLogic : MonoBehaviour
     public string Tag;
 
     public float FiringTime = 2f;
+    public float ColorChange = 0f;
 
     public int Damage = 1;
 
@@ -40,7 +41,7 @@ public class EyeLogic : MonoBehaviour
         //Sets a Game Object to the Player Character and adds to guard array.
         Chara = GameObject.FindGameObjectWithTag("Player");
         Guard = GameObject.FindGameObjectsWithTag("Enemy");
-        WallGuard = GameObject.FindGameObjectsWithTag("WallEnemy");
+        //WallGuard = GameObject.FindGameObjectsWithTag("WallEnemy");
         Detected = GetComponent<AudioSource>();
         Laser.enabled = false;
         Impact.Stop();
@@ -73,9 +74,13 @@ public class EyeLogic : MonoBehaviour
             {
                 if (LaserActive == false)
                 {
+                    ColorChange += (Time.deltaTime / FiringTime);
+                    print(ColorChange);
                     Laser.enabled = true;
                     Laser.SetPosition(0, transform.position);
                     Laser.SetPosition(1, HitData.point);
+                    Laser.endWidth = Mathf.Lerp(0.3f, 0f, ColorChange);
+                    Laser.endColor = Color.Lerp(Color.red, Color.white*10, ColorChange);
                     Impact.Play();
                     Impact.transform.position = HitData.point;
 
@@ -107,12 +112,12 @@ public class EyeLogic : MonoBehaviour
 
                     EyeTrig.EyeTrig = true;
                 }
-                foreach (var I in WallGuard)
-                {
-                    WallTrig = I.GetComponent<WallEnemy>();
+                //foreach (var I in WallGuard)
+                //{
+                //    WallTrig = I.GetComponent<WallEnemy>();
 
-                    WallTrig.EyeAlarm = true;
-                }
+                //    WallTrig.EyeAlarm = true;
+                //}
 
             }
             else //Ensures guards don't follow the player's location when not in sight.
@@ -131,12 +136,12 @@ public class EyeLogic : MonoBehaviour
 
 
 
-                foreach (var I in WallGuard)
-                {
-                    WallTrig = I.GetComponent<WallEnemy>();
+                //foreach (var I in WallGuard)
+                //{
+                //    WallTrig = I.GetComponent<WallEnemy>();
 
-                    WallTrig.EyeAlarm = false;
-                }
+                //    WallTrig.EyeAlarm = false;
+                //}
             }
         }
         else //Ensures guards don't follow the player's location when not in sight.
@@ -144,13 +149,13 @@ public class EyeLogic : MonoBehaviour
             PlayerSeen = false;
             //Laser.enabled = false;
             Tag = null;
-            //EyeLight.color = Color.Lerp(Color.red, Color.white, 5f);
-            foreach (var I in WallGuard)
-            {
-                WallTrig = I.GetComponent<WallEnemy>();
+            ////EyeLight.color = Color.Lerp(Color.red, Color.white, 5f);
+            //foreach (var I in WallGuard)
+            //{
+            //    WallTrig = I.GetComponent<WallEnemy>();
 
-                //WallTrig.EyeAlarm = false;
-            }
+            //    //WallTrig.EyeAlarm = false;
+            //}
 
             foreach (var I in Guard)
             {
@@ -204,6 +209,7 @@ public class EyeLogic : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
         //GameObject.Destroy(Laser, 2F); 
+        ColorChange = 0f;
         LaserActive = false;
 
         if (Tag == "Player")

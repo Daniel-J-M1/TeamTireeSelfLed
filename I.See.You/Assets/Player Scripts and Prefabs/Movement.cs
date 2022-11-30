@@ -40,6 +40,15 @@ public class Movement : MonoBehaviour
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")); //Gets movement input.
         move = Vector3.ClampMagnitude(move, 1); //Sets the movement speed to be the same no matter the direction.
 
+        if (Camera == false)
+        {
+            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.W)|| Input.GetKey(KeyCode.S))
+            {
+                //Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")); //Gets movement input.
+                //move = Vector3.ClampMagnitude(move, 1); //Sets the movement speed to be the same no matter the direction.
+                transform.rotation = Quaternion.LookRotation(move);
+            }
+        }
 
         if (Camera == true)
         {
@@ -98,12 +107,7 @@ public class Movement : MonoBehaviour
             transform.position = new Vector3(transform.position.x, Ground, transform.position.z);
         }
 
-        if (Camera == false)
-        {
-            //Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")); //Gets movement input.
-            //move = Vector3.ClampMagnitude(move, 1); //Sets the movement speed to be the same no matter the direction.
-            transform.rotation = Quaternion.LookRotation(move);
-        }
+
         
 
 
