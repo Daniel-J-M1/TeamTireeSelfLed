@@ -9,7 +9,7 @@ public class EyeLogic : MonoBehaviour
     private GameObject Chara;       //Reference to the player.
     public GameObject Projectile;
 
-    private GameObject[] Guard;     //Array for the guard assets
+    public GameObject[] Guard;     //Array for the guard assets
     private GameObject[] WallGuard;
 
     private AudioSource Detected;
@@ -75,7 +75,7 @@ public class EyeLogic : MonoBehaviour
                 if (LaserActive == false)
                 {
                     ColorChange += (Time.deltaTime / FiringTime);
-                    print(ColorChange);
+                    //print(ColorChange);
                     Laser.enabled = true;
                     Laser.SetPosition(0, transform.position);
                     Laser.SetPosition(1, HitData.point);
@@ -111,6 +111,7 @@ public class EyeLogic : MonoBehaviour
                     EyeTrig = I.GetComponent<Enemy>();
 
                     EyeTrig.EyeTrig = true;
+                    print(EyeTrig.EyeTrig);
                 }
                 //foreach (var I in WallGuard)
                 //{
@@ -131,7 +132,7 @@ public class EyeLogic : MonoBehaviour
                 {
                     EyeTrig = I.GetComponent<Enemy>();
 
-                    EyeTrig.EyeTrig = false;
+                    //EyeTrig.EyeTrig = false;
                 }
 
 
@@ -161,7 +162,7 @@ public class EyeLogic : MonoBehaviour
             {
                 EyeTrig = I.GetComponent<Enemy>();
 
-                EyeTrig.EyeTrig = false;
+                //EyeTrig.EyeTrig = false;
             }
 
             
@@ -214,7 +215,7 @@ public class EyeLogic : MonoBehaviour
 
         if (Tag == "Player")
         {
-            print(Tag);
+            //print(Tag);
             Chara.GetComponent<PlayerHealth>().DamagePlayer(Damage);
         }
         if (Tag == "DestructibleObject")

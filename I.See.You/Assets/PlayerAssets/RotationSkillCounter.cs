@@ -34,10 +34,10 @@ public class RotationSkillCounter : MonoBehaviour
     public IEnumerator RotSkill()
     {
         Check = false;
-        print("Start");
+        //print("Start");
         yield return new WaitForSeconds(Recharge);
         Check = true;
-        print("Stop");
+        //print("Stop");
         RotCounter++;
     }
 

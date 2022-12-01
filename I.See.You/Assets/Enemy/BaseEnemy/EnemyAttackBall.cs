@@ -34,7 +34,7 @@ public class EnemyAttackBall : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            print("Attack");
+            //print("Attack");
             PlayerRange = true;
         }
     }

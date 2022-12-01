@@ -162,7 +162,7 @@ public class Enemy : MonoBehaviour
             {
                 if (PlayerSeen == true)
                 {
-                    print("calm Trig");
+                    //print("calm Trig");
                     StartCoroutine(PlayerGone());
                 }
                 PlayerSeen = false;
@@ -183,13 +183,14 @@ public class Enemy : MonoBehaviour
         {
             if (PlayerSeen == false)
             {
-                print("Eye");
+                //print("Eye");
                 StopCoroutine(PlayerGone());
                 StartCoroutine(PlayerSpotted());
             }
             PlayerSeen = true;
             Guard.stoppingDistance = AttackRange;
             Guard.SetDestination(Player.position);
+            EyeTrig = false;
         }
         else
         {
@@ -198,7 +199,7 @@ public class Enemy : MonoBehaviour
             {
                 if (PlayerSeen == true)
                 {
-                    print("calm EYETrig");
+                    //print("calm EYETrig");
                     StartCoroutine(PlayerGone());
                 }
 
@@ -248,7 +249,7 @@ public class Enemy : MonoBehaviour
             Anim.SetTrigger("Calm");
             Guard.isStopped = true;
 
-            print("calm");
+            //print("calm");
 
             yield return new WaitForSeconds(0.8f); //Time for Revert Animation.
             Guard.isStopped = false;
