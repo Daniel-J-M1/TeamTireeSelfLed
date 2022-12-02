@@ -3062,7 +3062,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557940992}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< Updated upstream
 --- !u!1 &590005900
+=======
+--- !u!1001 &569859605
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1651771083812191593, guid: 43e0e12ff254d9544bc3c4f6f9f8f4c8, type: 3}
+      propertyPath: m_Name
+      value: BG (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651771083812191606, guid: 43e0e12ff254d9544bc3c4f6f9f8f4c8, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651771083812191606, guid: 43e0e12ff254d9544bc3c4f6f9f8f4c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651771083812191606, guid: 43e0e12ff254d9544bc3c4f6f9f8f4c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651771083812191606, guid: 43e0e12ff254d9544bc3c4f6f9f8f4c8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651771083812191606, guid: 43e0e12ff254d9544bc3c4f6f9f8f4c8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651771083812191606, guid: 43e0e12ff254d9544bc3c4f6f9f8f4c8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651771083812191606, guid: 43e0e12ff254d9544bc3c4f6f9f8f4c8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651771083812191606, guid: 43e0e12ff254d9544bc3c4f6f9f8f4c8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651771083812191606, guid: 43e0e12ff254d9544bc3c4f6f9f8f4c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651771083812191606, guid: 43e0e12ff254d9544bc3c4f6f9f8f4c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651771083812191606, guid: 43e0e12ff254d9544bc3c4f6f9f8f4c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 43e0e12ff254d9544bc3c4f6f9f8f4c8, type: 3}
+--- !u!1 &613781906
+>>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4158,11 +4219,107 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     m_RemovedComponents:
     - {fileID: 5873142497252077366, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
     - {fileID: 5873142497252077361, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
 --- !u!1 &815418872
+=======
+    - target: {fileID: 1736484419320028066, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1736484419320028069, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_Name
+      value: Health (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1736484421238471739, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1736484421238471739, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986921426570476060, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986921426570476060, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 6986921426570476060, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_Color.a
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986921426570476060, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986921426570476060, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986921426570476060, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986921426570476060, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607311829546658222, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_text
+      value: 'Using WASD for the top left and bottom right actions respectively,
+        you can use 1 to rotate the camera view clockwise and 2 to rotate the camera
+        view counterclockwise.
+
+        Keep an eye on the colour of the neon lights
+        on the walls! Each colour area has a corresponding key, you need to find
+        the keys to all the colour areas and escape the room.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607311829546658222, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.754717
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607311829546658222, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.754717
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607311829546658222, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.754717
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607311829546658222, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607311829546658222, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4290822336
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+--- !u!114 &869387250 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1736484419402962119, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+  m_PrefabInstance: {fileID: 869387248}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b85c0c45866e2e4ebb914f5e30a6f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &889999168 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
+  m_PrefabInstance: {fileID: 5873142495779177826}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &937889795
+>>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10530,6 +10687,27 @@ PrefabInstance:
       propertyPath: X
       value: 
       objectReference: {fileID: 1932541692}
+<<<<<<< Updated upstream
+=======
+    - target: {fileID: 5873142497252077363, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
+      propertyPath: Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5873142497252077363, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
+      propertyPath: ExitState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5873142497252077363, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
+      propertyPath: DialogueText
+      value: 'Using WASD for the top left and bottom right actions respectively,
+        you can use 1 to rotate the camera view clockwise and 2 to rotate the camera
+        view counterclockwise.
+
+        Keep an eye on the colour of the neon lights
+        on the walls! Each colour area has a corresponding key, you need to find
+        the keys to all the colour areas and escape the room.'
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes
     - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
       propertyPath: m_RootOrder
       value: 14
