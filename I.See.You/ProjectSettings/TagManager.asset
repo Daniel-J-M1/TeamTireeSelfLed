@@ -24,6 +24,7 @@ TagManager:
   - UIKeyCounter
   - MenuLookPoints
   - PlayerController
+  - KeyAudio
   layers:
   - Default
   - TransparentFX

@@ -1335,11 +1335,6 @@ MonoBehaviour:
   Walls:
   - {fileID: 1525983952}
   BaseMat: []
---- !u!4 &294919354 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-  m_PrefabInstance: {fileID: 1576105889}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &300805606
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,13 +1522,14 @@ MonoBehaviour:
   X: {fileID: 0}
   Text: {fileID: 0}
   ExitState: 0
-  DialogueText: 'The road to the front is blocked
+  DialogueText: 'The path is blocked by a special wall. Click on the floating block
+    above to rotate it.
 
-    Use the mouse to click on
-    the red squares on the red wall to rotate the wall
 
-    Create a pathway for
-    yourself'
+    Right click is Clockwise.
+
+
+    Left click is for Anticlockwise.'
 --- !u!65 &345395277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1673,86 +1669,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3329198905330706755, guid: 30a6760451ec1ee48ba6671960e2cd58, type: 3}
   m_PrefabInstance: {fileID: 367989816}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &373005164
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1595235479}
-    m_Modifications:
-    - target: {fileID: 5873142497252077362, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_Name
-      value: DiaLogTrigger (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077363, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: X
-      value: 
-      objectReference: {fileID: 1932541692}
-    - target: {fileID: 5873142497252077363, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077363, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: DialogueText
-      value: 'This road is extremely well guarded
-
-        Avoid them
-
-        Find
-        another way to find the key'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 5.0167
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -11.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -18.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5873142497252077366, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-    - {fileID: 5873142497252077361, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
 --- !u!1001 &381984467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1993,11 +1909,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eda89fd4d73f11f46a962f8d24d36ffc, type: 3}
---- !u!4 &451620793 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-  m_PrefabInstance: {fileID: 373005164}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &463352586 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8621712373835725465, guid: eda89fd4d73f11f46a962f8d24d36ffc, type: 3}
@@ -2940,13 +2851,13 @@ PrefabInstance:
       propertyPath: DialogueText
       value: 'Congratulations on finding the last key!
 
+
         The green glowing
-        door  is the exit and you can get out of here by pressing Q to passing through
-        it.'
+        door is the exit and you can progress by pressing Q to open.'
       objectReference: {fileID: 0}
     - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
       propertyPath: m_LocalScale.x
@@ -2962,7 +2873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -29.37
+      value: -27.09
       objectReference: {fileID: 0}
     - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3237,19 +3148,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5873142497252077363, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
       propertyPath: DialogueText
-      value: 'Some areas of the map will be patrolled by Cyber Eye
+      value: 'Watch out for the spotlight! An Eye is patroling and will alert all
+        the guards of your location.
 
-        Damage
-        will be dealt when spotted by CyberEyes
 
-        Watch the eye''s red laser
-        trajectory from behind cover
-
-        Pass through gaps at the right time'
+        Get out of that line of sight quickly
+        as the Eye will lock on and fire. Use the shadows to hide form the line of
+        sight.'
       objectReference: {fileID: 0}
     - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
       propertyPath: m_LocalScale.z
@@ -3531,6 +3440,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1144492065812390073, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -10
+      objectReference: {fileID: 0}
     - target: {fileID: 1736484419320028065, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3630,6 +3543,10 @@ PrefabInstance:
     - target: {fileID: 1736484421238471739, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607311829546658222, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9a162312df7bce45a82d2c985951b37, type: 3}
@@ -4800,9 +4717,11 @@ MonoBehaviour:
   X: {fileID: 0}
   Text: {fileID: 0}
   ExitState: 0
-  DialogueText: 'Ahead is a key
+  DialogueText: 'Congratulations on finding a key!
 
-    Get all the keys to get through the exit'
+
+    Be careful however! Ahead
+    are enemies. Look out and avoid their line of sight.'
 --- !u!65 &1256232574
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4828,7 +4747,7 @@ Transform:
   m_LocalScale: {x: 4.865054, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1595235479}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1274008721
 GameObject:
@@ -6200,92 +6119,6 @@ MonoBehaviour:
   Walls:
   - {fileID: 249962223}
   BaseMat: []
---- !u!1001 &1576105889
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1595235479}
-    m_Modifications:
-    - target: {fileID: 5873142497252077362, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_Name
-      value: DiaLogTrigger (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077363, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: X
-      value: 
-      objectReference: {fileID: 1932541692}
-    - target: {fileID: 5873142497252077363, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077363, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: DialogueText
-      value: 'There is a machine guard ahead
-
-        Click on the red button and
-        use the revolving door to block its view'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.1591501
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.7131
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3.4165063
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -22.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5873142497252077366, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-    - {fileID: 5873142497252077361, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
 --- !u!1001 &1593964047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6393,9 +6226,7 @@ Transform:
   m_Children:
   - {fileID: 889999168}
   - {fileID: 345395280}
-  - {fileID: 451620793}
   - {fileID: 1256232577}
-  - {fileID: 294919354}
   - {fileID: 966754847}
   - {fileID: 1907938210}
   m_Father: {fileID: 55280126}
@@ -7843,13 +7674,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5873142497252077363, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
       propertyPath: ExitState
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5873142497252077363, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
       propertyPath: DialogueText
-      value: Using WASD for the top left and bottom right actions respectively, you
-        can use 1 to rotate the camera view clockwise and 2 to rotate the camera
-        view counterclockwise.
+      value: 'Movement is controlled with the WASD keys. Using The 1 and 2 Buttons,
+        you can change the camera position.
+
+
+        Use the colours in the level
+        to guide you. Each has a meaning whether it is the location of a key or where
+        to find the exit. Find all the keys to escape!'
       objectReference: {fileID: 0}
     - target: {fileID: 5873142497252077367, guid: aeef6c4cb6cba10479c774144e39357c, type: 3}
       propertyPath: m_RootOrder
