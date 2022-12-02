@@ -25,6 +25,8 @@ public class PlayerHealth : MonoBehaviour
 
     public HealthUI Bar;
 
+    private AudioSource HurtAudio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,7 @@ public class PlayerHealth : MonoBehaviour
         Health = MaxHealth;
         Bar.MAXHealth(MaxHealth);
         Base();
+        HurtAudio = GetComponent<AudioSource>();
         PlayerMesh = Player.GetComponent<MeshRenderer>();
     }
 
@@ -81,6 +84,7 @@ public class PlayerHealth : MonoBehaviour
         if (Hurt == false)
         {
             Hurt = true;
+            HurtAudio.Play();
             StartCoroutine(Invulnerable());
             Health = Health - Hit;
             Bar.SliderValue(Health);

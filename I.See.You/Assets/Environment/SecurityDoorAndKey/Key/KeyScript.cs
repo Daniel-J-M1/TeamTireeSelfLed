@@ -5,18 +5,22 @@ using UnityEngine;
 public class KeyScript : MonoBehaviour
 {
     private GameObject UIElement;
+    private GameObject KeyAudioObject;
     public bool Range = false;
     public float RotateSpeed = 5f;
     public float FloatHeight = 0.3f;
     public float FloatSpeed = 3f;
     private Vector3 StartPos;
+    private AudioSource KeyPickUp;
     //public GameObject SecurityDoor;
     //private SecurityDoorScript Scripts;
 
     private void Start()
     {
         UIElement = GameObject.FindGameObjectWithTag("UIKeyCounter");
+        KeyAudioObject = GameObject.FindGameObjectWithTag("KeyAudio");
         StartPos = transform.position;
+        KeyPickUp = KeyAudioObject.GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -28,7 +32,7 @@ public class KeyScript : MonoBehaviour
         if (Range == true)
         {
             //Scripts = SecurityDoor.GetComponent<SecurityDoorScript>();
-
+            KeyPickUp.Play();
             //Scripts.KeyFound();
             UIElement.GetComponent<KeyCounter>().CounterDown();
 

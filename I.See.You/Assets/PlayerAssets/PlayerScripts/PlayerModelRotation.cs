@@ -6,9 +6,6 @@ public class PlayerModelRotation : MonoBehaviour
 {
     private CharacterController Control;    //References the player character
 
-
-
-
     // Start is called before the first frame update
     void Start()
     {
