@@ -33,7 +33,6 @@ public class MainMenu : MonoBehaviour
     }
     public void Quit()
     {
-        Debug.Log("Game has been quit");
         Application.Quit();
     }
 

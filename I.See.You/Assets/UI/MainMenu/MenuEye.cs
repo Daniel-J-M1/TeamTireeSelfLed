@@ -14,19 +14,19 @@ public class MenuEye : MonoBehaviour
     private bool Change = true;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         MenuPoints = GameObject.FindGameObjectsWithTag("MenuLookPoints");
         Control = MenuPoints.Length;
         LookSpeed = Random.Range(1, 10) * Time.deltaTime;
         Change = true;
-        Debug.Log(Index);
+        Time.timeScale = 1;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
         if (Change == true)
         {
             //print(Index);
