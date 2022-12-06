@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12436844, g: 0.07628701, b: 0.28216228, a: 1}
+  m_IndirectSpecularColor: {r: 0.12436823, g: 0.076286785, b: 0.28216147, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1206,15 +1206,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1907203697703201284, guid: 843e67c648d35e644bb8a0db6f1b4417, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 1907203697703201284, guid: 843e67c648d35e644bb8a0db6f1b4417, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 1907203697703201284, guid: 843e67c648d35e644bb8a0db6f1b4417, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 2160890910334938297, guid: 843e67c648d35e644bb8a0db6f1b4417, type: 3}
       propertyPath: EyeSight
@@ -8146,15 +8146,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1907203697703201284, guid: 843e67c648d35e644bb8a0db6f1b4417, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 1907203697703201284, guid: 843e67c648d35e644bb8a0db6f1b4417, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 1907203697703201284, guid: 843e67c648d35e644bb8a0db6f1b4417, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 2160890910334938297, guid: 843e67c648d35e644bb8a0db6f1b4417, type: 3}
       propertyPath: EyeSight
@@ -10320,15 +10320,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1907203697703201284, guid: 843e67c648d35e644bb8a0db6f1b4417, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 1907203697703201284, guid: 843e67c648d35e644bb8a0db6f1b4417, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1907203697703201284, guid: 843e67c648d35e644bb8a0db6f1b4417, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 2160890910334938297, guid: 843e67c648d35e644bb8a0db6f1b4417, type: 3}
       propertyPath: EyeSight

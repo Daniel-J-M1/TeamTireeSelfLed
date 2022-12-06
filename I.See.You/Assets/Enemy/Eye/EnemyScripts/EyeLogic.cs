@@ -188,7 +188,7 @@ public class EyeLogic : MonoBehaviour
         {
             Triggered = false;
             PlayerSeen = false;
-            //Detected.Stop();
+            Detected.Stop();
 
         }
 
